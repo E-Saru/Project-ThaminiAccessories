@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flatdango</title>
+</head>
+<body>
+    <div id="app">
+        <div id="menu">
+            <h2>Movie Menu</h2>
+            <ul id="films"></ul>
+        </div>
+        <div id="details">
+            <h1>Flatdango Movie Theater</h1>
+            <div id="details-content">
+                <div id="film-details">
+                    <img id="film-poster" src="" alt="Movie Poster" />
+                    <div id="info">
+                        <h3 id="film-title"></h3>
+                        <p><span class="label">ID:</span> <span id="film-id"></span></p>
+                        <p><span class="label">Runtime:</span> <span id="film-runtime"></span> minutes</p>
+                        <p><span class="label">Capacity:</span> <span id="film-capacity"></span></p>
+                        <p><span class="label">Showtime:</span> <span id="film-showtime"></span></p>
+                        <p><span class="label">Tickets Sold:</span> <span id="film-tickets-sold"></span>/<span id="film-capacity"></span></p>
+                        <p><span class="label">Description:</span> <span id="film-description"></span></p>
+                    </div>
+                    <button onClick="buyTicket()">Buy Ticket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
