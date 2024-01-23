@@ -4,23 +4,36 @@
     box-sizing: border-box;
 }
 body{
-    background-color: whitesmoke;
+    background-color: rgb(219, 209, 209);
+    width: 100%;
 }
 .navigation ul li{
     display: inline;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vmin;
     padding: 20px;
     color: #5E3535;
 }
 .navigation ul{
     text-align: right;
     background-color: rgb(126, 226, 216);
+    height: 5vh;
     }
-.navigation ul::after{
-    background-color: antiquewhite;
-    }
-.navigation ul li:hover{
+
+a:link, a:visited {
+    background-color: rgb(126, 226, 216);
+    color: #5E3535;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
     background-color: rgb(30, 190, 190);
-}
+    color: #5E3535;
+  }
+
 .image{
     width: 100%;
     height: 40vh;
@@ -34,30 +47,36 @@ body{
 }
 
 .about{
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0.6899999976) 39%, rgba(217, 217, 217, 0) 71%, rgba(217, 217, 217, 0.5299999714) 95%, #a3cfd2 100%);
+    background-image: linear-gradient(180deg, rgb(126, 226, 216) 10%, rgba(194, 231, 229, 0) 71%, rgb(126, 226, 216)100%, #a3cfd2 100%);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
     height: 13rem;
     margin-bottom: 1.9489rem;
-    padding: 0.9327rem 11.7rem;
-    width: 100%
 }
+
 .title ul{
     list-style: none;
     text-align: center;
     color: #5E3535;
     font-family: Inter, 'Source Sans Pro';
     font-size: 2vmin;
-
+    margin-bottom: 5vh;
 }
-p{
+.about p{
     color: #5e3535;
     font-family: Inter, 'Source Sans Pro';
     display: block;
-    font-size: 1.8
-    vmin;
-    font-weight: 400;
+    font-size: 2.2vmin;
+    font-weight: 400rem;
     letter-spacing: 0.045rem;
+    padding-left: 10vmin;
+    padding-right: 10vmin;
+
 }
 h1{
     font-size: 7vmin;
@@ -70,13 +89,15 @@ h2{
     text-align: center;
 }
 section{
-    width: 90%;
+    width: 100%;
     margin: 80px auto;
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
        
 }
 .row .col{
@@ -98,6 +119,13 @@ h3, h4{
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+h5, h6{
+    font-size: 2vmin;
+    color: #5E3535;
+    text-align: center;
+}
+
 .items .display{
     display: grid;
     gap: 18px;
@@ -130,8 +158,20 @@ h3, h4{
     width: 100%;
     background-color: #d9d9d9;
  }
+
+ .purchase-button {
+    background-color: rgb(30, 190, 190);
+    color: #5E3535;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
 .footerBottom{
-    background-color: #d9d9d9;
+    background-color: rgb(126, 226, 216);
     height: 19rem;
     position: relative;
     width: 100%;
