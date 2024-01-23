@@ -34,9 +34,12 @@ function createProductElement(product) {
     const price = document.createElement('h4');
     price.textContent = `Ksh. ${product.price}`;
 
+    const purchaseButton = createPurchaseButton();
+
     col.appendChild(img);
     col.appendChild(name);
     col.appendChild(price);
+    col.appendChild(purchaseButton);
 
     return col;
 }
@@ -64,12 +67,29 @@ function createImageElement(imageItem) {
     const price = document.createElement('h4');
     price.textContent = `Ksh. ${imageItem.price}`;
 
+    const purchaseButton = createPurchaseButton();
+
     displayItem.appendChild(img);
     displayItem.appendChild(name);
     displayItem.appendChild(price);
+    displayItem.appendChild(purchaseButton);
+
 
     return displayItem;
 }
+
+function createPurchaseButton() {
+    const button = document.createElement('button');
+    button.textContent = 'Purchase';
+    button.classList.add('purchase-button');
+    
+    button.addEventListener('click', () => {
+        alert('Purchase Confirmed!');
+    });
+
+    return button;
+}
+
 
 function initializeSliderScrollbar() {
     const scrollbarThumb = document.querySelector('.slider-scrollbar .scrollbar-thumb');
